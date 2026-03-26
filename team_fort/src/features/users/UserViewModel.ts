@@ -8,12 +8,7 @@ export function useUserViewModel(){
 
     useEffect(()=>{
         //simulando API
-        setTimeout(()=>{
-            setUser({
-                name:"Edgar",
-                avatar:"https://i.pravatar.cc/150",//=>online;  /images/Avatar.png => local
-            });
-        }, 500);
+        
     }, []);
     return {user};
 }
