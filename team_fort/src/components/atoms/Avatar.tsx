@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 type Props = {
-    src: string /*endereço da img*/
+    src: string /*endereç da img*/
     alt?: string /*Descrição da img. ? é opcional.*/
 }
 
