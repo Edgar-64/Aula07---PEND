@@ -1,8 +1,8 @@
 import Avatar from "../atoms/Avatar";
 
 type Props = {
-    name: string
-    avatar: string
+    name: string;
+    avatar: string;
 }
 
 export default function UserInfo({name, avatar}:Props){

@@ -2,13 +2,19 @@
 
 import { useEffect, useState } from "react"
 import { User } from "./UserModel"
+import { getUser } from "./get"
 
-export function useUserViewModel(){
+export function useUserViewModel() {
     const [user, setUser] = useState<User | null>(null)
 
-    useEffect(()=>{
-        //simulando API
-        
+    useEffect(() => {
+        async function loadUser() {            
+            const data = await getUser();
+            setUser(data);
+        }
+        loadUser();
     }, []);
-    return {user};
+
+ 
+    return { user };
 }

@@ -1,5 +1,5 @@
 export async function getUser() {
-    const token = localStorage.getItem("token");//JWT salvo
+    const token = localStorage.getItem("token");
 
     const response = await fetch("http://localhost:3030/users",{
         method:"GET",
